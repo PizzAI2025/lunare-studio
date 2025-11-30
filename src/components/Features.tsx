@@ -22,7 +22,11 @@ const features = [
   {
     icon: Image,
     title: "Galeria Premium",
-    description: "Mostre seu trabalho com fotos grandes. Cliente vê e já quer agendar.",
+    description: (
+      <>
+        Mostre seu trabalho com <strong>fotos grandes</strong>. Cliente <strong>vê</strong> e <strong>já quer agendar</strong>.
+      </>
+    ),
   },
   {
     icon: DollarSign,
