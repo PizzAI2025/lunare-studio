@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles, Calendar, Heart } from "lucide-react";
-import logoLunare from "@/assets/logo-lunare.png";
+import logoLunare from "@/assets/logo-lunare.jpg";
 
 export const Hero = () => {
   return (
