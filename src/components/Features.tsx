@@ -19,7 +19,11 @@ const features = [
   {
     icon: DollarSign,
     title: "Clubes & Assinaturas",
-    description: "Quinzenal Básico, Perfeito ou Mensal Luxo. Receita garantida todo mês.",
+    description: (
+      <>
+        <strong>Quinzenal Básico</strong>, <strong>Perfeito</strong> ou <strong>Mensal Luxo</strong>. Receita garantida todo mês.
+      </>
+    ),
   },
   {
     icon: Award,
