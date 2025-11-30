@@ -2,14 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Sparkles, Calendar, Heart } from "lucide-react";
 import logoLunare from "@/assets/logo-lunare.jpg";
 export const Hero = () => {
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-20">
       {/* Gradient glow de fundo */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-96 opacity-30 blur-3xl">
         <div className="absolute inset-0 gradient-primary rounded-full" />
       </div>
 
-      <div className="container max-w-6xl mx-auto relative z-10">
-        <div className="text-center space-y-8">
+      <div className="container max-w-6xl mx-auto relative z-10 px-4">
+        <div className="text-center space-y-8 flex flex-col items-center">
           {/* Badge superior */}
           <div className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full animate-fade-in-up">
             <Sparkles className="w-4 h-4 text-primary" />
@@ -17,14 +17,14 @@ export const Hero = () => {
           </div>
 
           {/* Título principal */}
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight animate-fade-in-up delay-100">
+          <h1 className="text-4xl md:text-7xl font-bold leading-tight animate-fade-in-up delay-100 text-center w-full">
             <span className="gradient-primary bg-clip-text text-transparent">
               Olá você está no cantinho da Dayane
             </span>
           </h1>
 
           {/* Subtítulo */}
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto animate-fade-in-up delay-200">Agende mão + pé quinzenal ou mensal e aproveite nossos combos super especiais.</p>
+          <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto animate-fade-in-up delay-200 text-center px-2">Agende mão + pé quinzenal ou mensal e aproveite nossos combos super especiais.</p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up delay-300">
