@@ -40,7 +40,11 @@ const features = [
   {
     icon: Award,
     title: "Programa VIP",
-    description: "Fidelidade automática. Assinantes ganham selos especiais e prioridade.",
+    description: (
+      <>
+        <strong>Fidelidade automática</strong>. Assinantes ganham <strong>selos especiais</strong> e <strong>prioridade</strong>.
+      </>
+    ),
   },
   {
     icon: Clock,
