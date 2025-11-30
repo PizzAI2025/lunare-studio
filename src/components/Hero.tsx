@@ -20,17 +20,14 @@ export const Hero = () => {
 
           {/* Título principal */}
           <h1 className="text-5xl md:text-7xl font-bold leading-tight animate-fade-in-up delay-100">
-            Transforme sua esmalteria
-            <br />
             <span className="gradient-primary bg-clip-text text-transparent">
-              em um estúdio premium
+              Lunare: Suas Unhas Sempre Perfeitas
             </span>
           </h1>
 
           {/* Subtítulo */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto animate-fade-in-up delay-200">
-            Agendamento 24h, lembretes automáticos e assinaturas quinzenais.
-            Seus clientes nunca mais vão te esquecer.
+            Agende mão + pé quinzenal por R$ 179 e nunca mais descasque no meio do mês.
           </p>
 
           {/* CTAs */}
@@ -39,8 +36,7 @@ export const Hero = () => {
               size="lg" 
               className="btn-hero gap-2 text-lg px-10 py-6"
             >
-              <Calendar className="w-5 h-5" />
-              Começar Agora
+              Agende Agora
             </Button>
             <Button 
               size="lg" 
