@@ -136,7 +136,7 @@ export const Plans = () => {
                   }`}
                   size="lg"
                 >
-                  {plan.highlight ? "Escolher Perfeito" : "Escolher Plano"}
+                  {plan.highlight ? "Escolha Perfeita" : "Escolher Plano"}
                 </Button>
               </div>
             </div>
