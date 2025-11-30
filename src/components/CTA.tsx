@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
-
 export const CTA = () => {
-  return (
-    <section className="py-24 px-4 relative overflow-hidden">
+  return <section className="py-24 px-4 relative overflow-hidden">
       {/* Gradient de fundo */}
       <div className="absolute inset-0">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-96 gradient-primary opacity-20 blur-3xl" />
@@ -39,9 +37,7 @@ export const CTA = () => {
               Criar Minha Agenda
               <ArrowRight className="w-5 h-5" />
             </Button>
-            <p className="text-sm text-muted-foreground">
-              Grátis por 14 dias • Sem cartão de crédito
-            </p>
+            <p className="text-sm text-muted-foreground">Grátis por 10 dias • Sem cartão de crédito</p>
           </div>
 
           {/* Garantia */}
@@ -69,6 +65,5 @@ export const CTA = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
