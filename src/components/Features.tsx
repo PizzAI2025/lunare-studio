@@ -13,7 +13,11 @@ const features = [
   {
     icon: Bell,
     title: "Lembretes Automáticos",
-    description: "WhatsApp automático 48h e 2h antes. Fim dos 'esqueci' e horários vazios.",
+    description: (
+      <>
+        <strong>WhatsApp automático</strong> 48h e 2h antes. Fim dos <strong>&apos;esqueci&apos;</strong> e <strong>horários vazios</strong>.
+      </>
+    ),
   },
   {
     icon: Image,
