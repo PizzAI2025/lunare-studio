@@ -21,7 +21,7 @@ export const Hero = () => {
           {/* Título principal */}
           <h1 className="text-5xl md:text-7xl font-bold leading-tight animate-fade-in-up delay-100">
             <span className="gradient-primary bg-clip-text text-transparent">
-              Lunare: Suas Unhas Sempre Perfeitas
+              Olá você está no cantinho da Dayane
             </span>
           </h1>
 
