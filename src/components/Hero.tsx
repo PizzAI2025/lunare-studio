@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles, Calendar, Heart } from "lucide-react";
+import logoLunare from "@/assets/logo-lunare.png";
 
 export const Hero = () => {
   return (
@@ -81,12 +82,11 @@ export const Hero = () => {
             <div className="absolute inset-0 gradient-primary opacity-20 blur-3xl rounded-3xl" />
             <div className="relative glass rounded-3xl p-8 shadow-glow">
               <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <Sparkles className="w-16 h-16 text-primary mx-auto animate-pulse-soft" />
-                  <p className="text-lg font-medium text-muted-foreground">
-                    Preview da Interface Lunare
-                  </p>
-                </div>
+                <img 
+                  src={logoLunare} 
+                  alt="Lunare - Você sempre brilhando" 
+                  className="w-full max-w-md animate-fade-in-up"
+                />
               </div>
             </div>
           </div>
