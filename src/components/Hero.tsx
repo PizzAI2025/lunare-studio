@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles, Calendar, Heart } from "lucide-react";
 import logoLunare from "@/assets/logo-lunare.jpg";
-
 export const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
       {/* Gradient glow de fundo */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-96 opacity-30 blur-3xl">
         <div className="absolute inset-0 gradient-primary rounded-full" />
@@ -26,23 +24,14 @@ export const Hero = () => {
           </h1>
 
           {/* Subtítulo */}
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto animate-fade-in-up delay-200">
-            Agende mão + pé quinzenal por R$ 179 e nunca mais descasque no meio do mês.
-          </p>
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto animate-fade-in-up delay-200">Agende mão + pé quinzenal ou mensal e aproveite nossos combos super especiais.</p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up delay-300">
-            <Button 
-              size="lg" 
-              className="btn-hero gap-2 text-lg px-10 py-6"
-            >
+            <Button size="lg" className="btn-hero gap-2 text-lg px-10 py-6">
               Agende Agora
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="text-lg px-10 py-6 rounded-[var(--radius)] hover:bg-muted"
-            >
+            <Button size="lg" variant="outline" className="text-lg px-10 py-6 rounded-[var(--radius)] hover:bg-muted">
               Ver Demonstração
             </Button>
           </div>
@@ -51,18 +40,11 @@ export const Hero = () => {
           <div className="flex items-center justify-center gap-6 pt-8 animate-fade-in-up delay-400">
             <div className="flex items-center gap-2">
               <div className="flex -space-x-2">
-                {[...Array(4)].map((_, i) => (
-                  <div
-                    key={i}
-                    className="w-10 h-10 rounded-full bg-gradient-primary border-2 border-background"
-                  />
-                ))}
+                {[...Array(4)].map((_, i) => <div key={i} className="w-10 h-10 rounded-full bg-gradient-primary border-2 border-background" />)}
               </div>
               <div className="text-left">
                 <div className="flex items-center gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Heart key={i} className="w-4 h-4 fill-primary text-primary" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Heart key={i} className="w-4 h-4 fill-primary text-primary" />)}
                 </div>
                 <p className="text-sm text-muted-foreground">
                   500+ esmalterias apaixonadas
@@ -78,16 +60,11 @@ export const Hero = () => {
             <div className="absolute inset-0 gradient-primary opacity-20 blur-3xl rounded-3xl" />
             <div className="relative glass rounded-3xl p-8 shadow-glow">
               <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl flex items-center justify-center">
-                <img 
-                  src={logoLunare} 
-                  alt="Lunare - Você sempre brilhando" 
-                  className="w-full max-w-md animate-fade-in-up"
-                />
+                <img src={logoLunare} alt="Lunare - Você sempre brilhando" className="w-full max-w-md animate-fade-in-up" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
