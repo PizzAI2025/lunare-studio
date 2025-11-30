@@ -4,7 +4,11 @@ const features = [
   {
     icon: Calendar,
     title: "Agendamento 24h",
-    description: "Clientes agendam sozinhas, escolhem profissional, serviço e horário. Você dorme tranquila.",
+    description: (
+      <>
+        Clientes agendam <strong>sozinhas</strong>, escolhem <strong>profissional</strong>, <strong>serviço</strong> e <strong>horário</strong>. Você <strong>dorme tranquila</strong>.
+      </>
+    ),
   },
   {
     icon: Bell,
