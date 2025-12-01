@@ -28,7 +28,14 @@ export const Hero = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up delay-300">
-            <Button size="lg" className="btn-hero gap-2 text-lg px-10 py-6">
+            <Button 
+              size="lg" 
+              className="btn-hero gap-2 text-lg px-10 py-6 cursor-pointer"
+              onClick={() => {
+                const plansSection = document.querySelector('#plans-section');
+                plansSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Agende Agora
             </Button>
             <Button size="lg" variant="outline" className="text-lg px-10 py-6 rounded-[var(--radius)] hover:bg-muted">
