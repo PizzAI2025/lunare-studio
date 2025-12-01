@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+
 export const CTA = () => {
+  const navigate = useNavigate();
   return <section className="py-24 px-4 relative overflow-hidden">
       {/* Gradient de fundo */}
       <div className="absolute inset-0">
@@ -33,7 +36,11 @@ export const CTA = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button size="lg" className="btn-hero gap-2 text-lg px-10 py-6">
+            <Button 
+              size="lg" 
+              className="btn-hero gap-2 text-lg px-10 py-6"
+              onClick={() => navigate('/agenda')}
+            >
               Criar Minha Agenda
               <ArrowRight className="w-5 h-5" />
             </Button>
